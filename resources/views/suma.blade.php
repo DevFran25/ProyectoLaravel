@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Resta de 2 números</title>
+    <title>Suma de 2 números</title>
     <style>
         body {
             background: linear-gradient(135deg, #f8fafc 0%, #e0e7ff 100%);
@@ -72,19 +72,19 @@
 </head>
 <body>
     <div class="container">
-        <h2>Restar dos números</h2>
+        <h2>Sumar dos números</h2>
         <form action="/suma" method="POST">
             @csrf <!-- Token de seguridad para formularios en Laravel -->
             <label for="numero1">Número 1:</label>
             <input type="number" id="numero1" name="numero1" required>
             <label for="numero2">Número 2:</label>
             <input type="number" id="numero2" name="numero2" required>
-            <button type="submit">Restar</button>
+            <button type="submit">Sumar</button>
         </form>
     </div>
     <br>
- @if (isset($resultado))
-    Resultado de la resta es: {{ $resultado }}
+ @if (isset($res))
+    Resultado de la suma es: {{ $res }}
 @endif
 </body>
 </html>
